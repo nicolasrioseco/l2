@@ -1,0 +1,95 @@
+-------------------------------------------------------------------------------
+Test set: L2_Mobile.test_FE.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.218 s <<< FAILURE! - in L2_Mobile.test_FE.RunCucumberTest
+Registro.Registrar dni  Time elapsed: 0.078 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'un nuevo usuario ingresa a la app y avanza al Login' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("un nuevo usuario ingresa a la app y avanza al Login")
+public void un_nuevo_usuario_ingresa_a_la_app_y_avanza_al_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("oprime sobre el boton Crear mi cuenta")
+public void oprime_sobre_el_boton_crear_mi_cuenta() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa su DNI {string}, nombre {string}, apellido {string}, telefono {string} y presiona Siguiente")
+public void ingresa_su_dni_nombre_apellido_telefono_y_presiona_siguiente(String string, String string2, String string3, String string4) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa su nombre de usuario {string}, contraseña {string}, repite su contraseña {string}, su mail {string}, repite su mail {string}, acepta T&C y presiona sobre Crear Cuenta")
+public void ingresa_su_nombre_de_usuario_contraseña_repite_su_contraseña_su_mail_repite_su_mail_acepta_t_c_y_presiona_sobre_crear_cuenta(String string, String string2, String string3, String string4, String string5) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("se crea correctamente el usuario")
+public void se_crea_correctamente_el_usuario() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Registro.Recuperar Usuario  Time elapsed: 0.008 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'un nuevo usuario ingresa a la app y avanza al Login' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("un nuevo usuario ingresa a la app y avanza al Login")
+public void un_nuevo_usuario_ingresa_a_la_app_y_avanza_al_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("oprime sobre el boton Olvide mi usuario")
+public void oprime_sobre_el_boton_olvide_mi_usuario() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa su Numero de Docuemento {string} su Email {string} y presiona Enviar")
+public void ingresa_su_numero_de_docuemento_su_email_y_presiona_enviar(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("se crea el usuario recibe un mail con su Nombre de Usuario")
+public void se_crea_el_usuario_recibe_un_mail_con_su_nombre_de_usuario() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Registro.Logearse  Time elapsed: 0.006 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'un nuevo usuario ingresa a la app y avanza al Login' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("un nuevo usuario ingresa a la app y avanza al Login")
+public void un_nuevo_usuario_ingresa_a_la_app_y_avanza_al_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa usuario {string}")
+public void ingresa_usuario(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa contraseña {string}")
+public void ingresa_contraseña(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("presiona sobre el boton Ingresar")
+public void presiona_sobre_el_boton_ingresar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("el usuario queda logeado")
+public void el_usuario_queda_logeado() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

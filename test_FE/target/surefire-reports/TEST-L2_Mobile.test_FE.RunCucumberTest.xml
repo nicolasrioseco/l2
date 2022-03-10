@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="L2_Mobile.test_FE.RunCucumberTest" time="0.218" tests="3" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/nico/Escritorio/projects/a/Segunda/Automation/MobileL2/test_FE/target/test-classes:/home/nico/Escritorio/projects/a/Segunda/Automation/MobileL2/test_FE/target/classes:/home/nico/.m2/repository/io/cucumber/cucumber-java/7.2.3/cucumber-java-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/cucumber-core/7.2.3/cucumber-core-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/cucumber-gherkin/7.2.3/cucumber-gherkin-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.2.3/cucumber-gherkin-messages-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/messages/17.1.1/messages-17.1.1.jar:/home/nico/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/home/nico/.m2/repository/io/cucumber/cucumber-expressions/15.0.1/cucumber-expressions-15.0.1.jar:/home/nico/.m2/repository/io/cucumber/datatable/7.2.3/datatable-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/cucumber-plugin/7.2.3/cucumber-plugin-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/docstring/7.2.3/docstring-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/html-formatter/17.0.0/html-formatter-17.0.0.jar:/home/nico/.m2/repository/io/cucumber/ci-environment/8.1.0/ci-environment-8.1.0.jar:/home/nico/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/nico/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.2.3/cucumber-junit-platform-engine-7.2.3.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/nico/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-suite/1.8.2/junit-platform-suite-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-suite-api/1.8.2/junit-platform-suite-api-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.8.2/junit-platform-suite-engine-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.8.2/junit-platform-suite-commons-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.2/junit-platform-launcher-1.8.2.jar:/home/nico/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/nico/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/nico/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/nico/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="America/Argentina/Buenos_Aires"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AR"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/nico/Escritorio/projects/a/Segunda/Automation/MobileL2/test_FE/target/surefire/surefirebooter18098606900279267763.jar /home/nico/Escritorio/projects/a/Segunda/Automation/MobileL2/test_FE/target/surefire 2022-03-09T17-34-54_546-jvmRun1 surefire6487011805461799492tmp surefire_02594051606019265184tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/nico/Escritorio/projects/a/Segunda/Automation/MobileL2/test_FE/target/test-classes:/home/nico/Escritorio/projects/a/Segunda/Automation/MobileL2/test_FE/target/classes:/home/nico/.m2/repository/io/cucumber/cucumber-java/7.2.3/cucumber-java-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/cucumber-core/7.2.3/cucumber-core-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/cucumber-gherkin/7.2.3/cucumber-gherkin-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.2.3/cucumber-gherkin-messages-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/messages/17.1.1/messages-17.1.1.jar:/home/nico/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/home/nico/.m2/repository/io/cucumber/cucumber-expressions/15.0.1/cucumber-expressions-15.0.1.jar:/home/nico/.m2/repository/io/cucumber/datatable/7.2.3/datatable-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/cucumber-plugin/7.2.3/cucumber-plugin-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/docstring/7.2.3/docstring-7.2.3.jar:/home/nico/.m2/repository/io/cucumber/html-formatter/17.0.0/html-formatter-17.0.0.jar:/home/nico/.m2/repository/io/cucumber/ci-environment/8.1.0/ci-environment-8.1.0.jar:/home/nico/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/nico/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.2.3/cucumber-junit-platform-engine-7.2.3.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/nico/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-suite/1.8.2/junit-platform-suite-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-suite-api/1.8.2/junit-platform-suite-api-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.8.2/junit-platform-suite-engine-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.8.2/junit-platform-suite-commons-1.8.2.jar:/home/nico/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.2/junit-platform-launcher-1.8.2.jar:/home/nico/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/home/nico/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/nico/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/nico/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/nico"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/nico/Escritorio/projects/a/Segunda/Automation/MobileL2/test_FE"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/nico/Escritorio/projects/a/Segunda/Automation/MobileL2/test_FE/target/surefire/surefirebooter18098606900279267763.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.14+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="user.name" value="nico"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.14.0-1027-oem"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/nico/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.14"/>
+    <property name="user.dir" value="/home/nico/Escritorio/projects/a/Segunda/Automation/MobileL2/test_FE"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="11.0.14+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="Registrar dni" classname="Registro" time="0.078">
+    <error type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'un nuevo usuario ingresa a la app y avanza al Login' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("un nuevo usuario ingresa a la app y avanza al Login")
+public void un_nuevo_usuario_ingresa_a_la_app_y_avanza_al_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("oprime sobre el boton Crear mi cuenta")
+public void oprime_sobre_el_boton_crear_mi_cuenta() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa su DNI {string}, nombre {string}, apellido {string}, telefono {string} y presiona Siguiente")
+public void ingresa_su_dni_nombre_apellido_telefono_y_presiona_siguiente(String string, String string2, String string3, String string4) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa su nombre de usuario {string}, contraseña {string}, repite su contraseña {string}, su mail {string}, repite su mail {string}, acepta T&C y presiona sobre Crear Cuenta")
+public void ingresa_su_nombre_de_usuario_contraseña_repite_su_contraseña_su_mail_repite_su_mail_acepta_t_c_y_presiona_sobre_crear_cuenta(String string, String string2, String string3, String string4, String string5) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("se crea correctamente el usuario")
+public void se_crea_correctamente_el_usuario() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+  </testcase>
+  <testcase name="Recuperar Usuario" classname="Registro" time="0.008">
+    <error type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'un nuevo usuario ingresa a la app y avanza al Login' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("un nuevo usuario ingresa a la app y avanza al Login")
+public void un_nuevo_usuario_ingresa_a_la_app_y_avanza_al_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("oprime sobre el boton Olvide mi usuario")
+public void oprime_sobre_el_boton_olvide_mi_usuario() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa su Numero de Docuemento {string} su Email {string} y presiona Enviar")
+public void ingresa_su_numero_de_docuemento_su_email_y_presiona_enviar(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("se crea el usuario recibe un mail con su Nombre de Usuario")
+public void se_crea_el_usuario_recibe_un_mail_con_su_nombre_de_usuario() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+  </testcase>
+  <testcase name="Logearse" classname="Registro" time="0.006">
+    <error type="io.cucumber.junit.platform.engine.UndefinedStepException"><![CDATA[io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'un nuevo usuario ingresa a la app y avanza al Login' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("un nuevo usuario ingresa a la app y avanza al Login")
+public void un_nuevo_usuario_ingresa_a_la_app_y_avanza_al_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa usuario {string}")
+public void ingresa_usuario(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingresa contraseña {string}")
+public void ingresa_contraseña(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("presiona sobre el boton Ingresar")
+public void presiona_sobre_el_boton_ingresar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("el usuario queda logeado")
+public void el_usuario_queda_logeado() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+  </testcase>
+</testsuite>
