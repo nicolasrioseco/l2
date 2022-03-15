@@ -40,3 +40,20 @@ Feature: Registro
     And ingresa contraseña "anto1234"
     And presiona sobre el boton Ingresar
     Then el usuario queda logeado
+    
+   @Denuncia
+   Scenario: Denuncia de siniestro - Tipo Robo - Bien asegurado: Joya
+   	Given un nuevo usuario ingresa a la app y avanza al Login
+    When ingresa usuario "jp85"
+    And ingresa contraseña "anto1234"
+    And presiona sobre el boton Ingresar
+    When presiona sobre el boton Denunciar un Siniestro
+    And selecciona "Joya" como Bien Asegurado
+    And permite grabar audio
+    When selecciona "Accidente" como Tipo de Siniestro
+    And completa el día "15" del mes "03" del año "2022", la hora "12" y la descripcion "Perdió la joya"
+    
+    
+    
+    
+    

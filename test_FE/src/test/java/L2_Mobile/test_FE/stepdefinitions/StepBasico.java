@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import L2_Mobile.test_FE.utils.support.ManejoErrores;
+import L2_Mobile.test_FE.util.support.ManejoErrores;
 
 public class StepBasico {
 

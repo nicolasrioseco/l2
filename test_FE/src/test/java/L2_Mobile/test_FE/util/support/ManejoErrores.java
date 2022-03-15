@@ -1,4 +1,4 @@
-package L2_Mobile.test_FE.utils.support;
+package L2_Mobile.test_FE.util.support;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.qameta.allure.Allure;
+//import io.qameta.allure.Allure;
 
 @Component
 @Scope("cucumber-glue")
@@ -37,8 +37,8 @@ public class ManejoErrores {
     |
     *------------------------------------------------------------------------------------------------*/
 	public void adherirErrorAlReporteAllure(String mensaje) {
-		Allure.addAttachment("Error", mensaje);
-		Allure.addAttachment("Captura de Pantalla", new ByteArrayInputStream(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES)));
+//		Allure.addAttachment("Error", mensaje);
+//		Allure.addAttachment("Captura de Pantalla", new ByteArrayInputStream(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES)));
 	}
 	
 	/*------------------------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ public class ManejoErrores {
     |
     *------------------------------------------------------------------------------------------------*/
 	public void adherirCapturaAlReporteAllure() {
-		Allure.addAttachment("Captura de Pantalla", new ByteArrayInputStream(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES)));
+//		Allure.addAttachment("Captura de Pantalla", new ByteArrayInputStream(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES)));
     }
     
     	/*------------------------------------------------------------------------------------------------
