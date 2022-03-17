@@ -19,47 +19,61 @@ public class DenunciaStep extends StepBasico{
 	public static String nombre;
 
 	@When("presiona sobre el boton Denunciar un Siniestro")
-	public void presiona_sobre_el_boton_Denunciar_un_Siniestro() throws Exception {
+	public void presiona_sobre_el_boton_Denunciar_un_Siniestro() {
 		try {
 			paginaDenuncia.clickBotonDenunciar();
 			paginaDenuncia.validarPantallaDenuncia();	
 		} catch (Exception e) {
 			manejarError(e);
-			throw e;
 		}
 	}
 
 	@When("selecciona {string} como Bien Asegurado")
-	public void selecciona_como_Bien_Asegurado(String bienAsegurado) throws Exception {
+	public void selecciona_como_Bien_Asegurado(String bienAsegurado) {
 		try {
 			paginaDenuncia.clickBienAsegurado(bienAsegurado);
-			paginaDenuncia.validarPantallaDenuncia();	
 		} catch (Exception e) {
 			manejarError(e);
-			throw e;
-		}
-	}
-	
-	@When("permite grabar audio")
-	public void permite_grabar_audio() throws Exception {
-		try {
-			paginaDenuncia.clickGrabarAudio();
-		} catch (Exception e) {
-			manejarError(e);
-			throw e;
 		}
 	}
 	
 	@When("selecciona {string} como Tipo de Siniestro")
-	public void selecciona_como_Tipo_de_Siniestro(String tipoSiniestro) throws Exception {
+	public void selecciona_como_Tipo_de_Siniestro(String tipoSiniestro) {
 		try {
-			paginaDenuncia.clickBienAsegurado(tipoSiniestro);
-			paginaDenuncia.validarPantallaDenuncia();	
+			paginaDenuncia.clickTipoSiniestro(tipoSiniestro);
 		} catch (Exception e) {
 			manejarError(e);
-			throw e;
 		}
 	}
 
+	@When("completa fecha y hora del siniestro y la descripcion {string}")
+	public void completa_fecha_y_hora_del_siniestro_y_la_descripcion(String descripcion) {
+		try {
+			paginaDenuncia.completaFecha();
+			paginaDenuncia.ingresaDescripcion(descripcion);
+		} catch (Exception e) {
+			manejarError(e);
+		}
+	}
+	
+	@When("presiona el boton Siguiente")
+	public void presiona_boton_Siguiente() {
+		try {
+		paginaDenuncia.clickSiguiente();
+		} catch (Exception e) {
+			manejarError(e);
+		}
+	}
+	
+	@When("selecciona la provincia {string}, completa el codigo postal {string}, completa la calle {string}, luego completa el numero {string}, completa el piso {string}, completa el departamento {string} y completa la unidad {string}")
+	public void selecciona_la_provincia_completa_el_codigo_postal_completa_la_calle_luego_completa_el_numero_completa_el_piso_completa_el_departamento_y_completa_la_unidad(String provincia, String cp, String calle, String numero, String piso, String dpto, String unidad) {
+
+		try{
+			paginaDenuncia.completaStep2(provincia,cp,calle,numero,piso,dpto,unidad);
+		}catch (Exception e) {
+			manejarError(e);
+		}
+	}
+	
 
 }

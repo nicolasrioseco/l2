@@ -49,10 +49,11 @@ Feature: Registro
     And presiona sobre el boton Ingresar
     When presiona sobre el boton Denunciar un Siniestro
     And selecciona "Joya" como Bien Asegurado
-    And permite grabar audio
     When selecciona "Accidente" como Tipo de Siniestro
-    And completa el día "15" del mes "03" del año "2022", la hora "12" y la descripcion "Perdió la joya"
-    
+    And completa fecha y hora del siniestro y la descripcion "Perdió la joya"
+    And presiona el boton Siguiente
+    When selecciona la provincia "Cordoba", completa el codigo postal "CORDOBA-CBA", completa la calle "Benancio Flores", luego completa el numero "1234", completa el piso "2", completa el departamento "C" y completa la unidad "2"
+    And presiona el boton Siguiente
     
     
     

@@ -34,13 +34,14 @@ public class Login extends AppiumBase {
 		List<String> stepOnBoarding = Arrays.asList("Autogestión", "Consultas", "Siniestros");
 		for(int i = 0; i< stepOnBoarding.size();i++) {
 			String step = (String) stepOnBoarding.get(i);
+			System.out.println("Estamos en el step: " + i + " del Onboarding");
 			validarPantallaOnBoarding(step);
 			clickElemento(botonSigOnBoarding, "Siguiente Step");
 		}
 	}
 	
 	public void validarPantallaOnBoarding(String step) throws Exception {
-		
+			Thread.sleep(1000);
 			validarContentDescDeElemento(step1OnBoarding, step, "Texto del Step OnBoarding");
 	}
 

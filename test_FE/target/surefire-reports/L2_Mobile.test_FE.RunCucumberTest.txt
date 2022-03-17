@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: L2_Mobile.test_FE.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.352 s - in L2_Mobile.test_FE.RunCucumberTest
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 3, Time elapsed: 124.984 s <<< FAILURE! - in L2_Mobile.test_FE.RunCucumberTest
+Registro.Denuncia de siniestro - Tipo Robo - Bien asegurado: Joya  Time elapsed: 123.61 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.android.packageinstaller:id/permission_allow_button (tried for 60 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'nico-ThinkPad-L14-Gen-1', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1027-oem', java.version: '11.0.14'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /home/nico/Escritorio/proje..., appPackage: ar.com.lasegunda.app, databaseEnabled: false, desired: {app: /home/nico/Escritorio/proje..., deviceName: samsung SM-G532M, platformName: android, resetKeyboard: false, udid: 420054d9c6bb45bb, uiautomator2ServerInstallTimeout: 100000, unicodeKeyboard: false}, deviceApiLevel: 23, deviceManufacturer: samsung, deviceModel: SM-G532M, deviceName: 420054d9c6bb45bb, deviceScreenDensity: 240, deviceScreenSize: 540x960, deviceUDID: 420054d9c6bb45bb, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 6.0.1, resetKeyboard: false, statBarHeight: 36, takesScreenshot: true, udid: 420054d9c6bb45bb, uiautomator2ServerInstallTimeout: 100000, unicodeKeyboard: false, viewportRect: {height: 924, left: 0, top: 36, width: 540}, warnings: {}, webStorageEnabled: false}
+Session ID: 176b09bc-dc6d-496c-ab9e-ebe9f34634b7
+*** Element info: {Using=id, value=com.android.packageinstaller:id/permission_allow_button}
+

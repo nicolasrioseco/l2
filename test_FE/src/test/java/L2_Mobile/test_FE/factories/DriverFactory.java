@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 import L2_Mobile.test_FE.util.enums.SistemaOperativoMobile;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 
@@ -91,6 +92,9 @@ public class DriverFactory {
 				//***CON APK
 				app = new File(apkDir, apkName);
 				clienteCapacidades.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+				clienteCapacidades.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
+				//clienteCapacidades.setCapability("appWaitPackage", "com.android.packageinstaller");
+				//clienteCapacidades.setCapability("appWaitActivity", ".permission.ui.GrantPermissionsActivity");
 				//*** CON appPackage y appActivity
 				//clienteCapacidades.setCapability("appPackage", "packageName");
 				//clienteCapacidades.setCapability("appActivity", "activityName");

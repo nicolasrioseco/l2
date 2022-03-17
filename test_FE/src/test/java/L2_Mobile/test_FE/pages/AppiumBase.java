@@ -1,6 +1,9 @@
 package L2_Mobile.test_FE.pages;
 
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
+import java.util.Locale;
 
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
@@ -110,8 +113,7 @@ public class AppiumBase {
 		encontrarElementoPorBy(locator).click();
 		log.info("Se hizo click en el elemento: "+nombreElemento);
 	}
-	
-	
+
 
 	/*------------------------------------------------------------------------------------------------
     |  Método: escribirTextoEnElemento(String locator, String texto)
@@ -573,6 +575,12 @@ public class AppiumBase {
         if(selector == Selector.resourceId) textoQueSeVisualiza = encontrarElementoPorResourceID(locator).getText();
         if(selector == Selector.contieneTexto) textoQueSeVisualiza = encontrarElementoPorTextoQueContiene(locator).getText();
         return textoQueSeVisualiza;
+    }
+    
+    public String obtenerFecha() {
+    	SimpleDateFormat formato = new SimpleDateFormat("EEEE, d 'de' MMMM 'de' yyyy", new Locale("es_AR"));
+    	String fecha = formato.format(new Date());
+    	return fecha;
     }
 
 }
